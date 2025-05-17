@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription</title>
+    <link rel="stylesheet" href="nav-footer.css">
+    <link rel="stylesheet" href="subscription.css">
+    <script defer src="subscription.js"></script>
+</head>
+<body>
+    <nav>
+        <div id="logo-container">
+            <img src="Asphatl Logo.png" alt="Asphatl Logo">
+            <b id="logo-name">
+                Asphatl 9: Rejends
+            </b>
+        </div>
+        <div id="menu-icon" class="menu-icon">
+            <img id="icon-menu" src="Menu Icon.png" alt="Icon Menu">
+        </div>
+        <ul id="menu-list" class="hidden">
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="products.html">Products</a>
+            </li>
+            <li>
+                <a href="news.html">News</a>
+            </li>
+            <li>
+                <a href="esport.html">Esport</a>
+            </li>
+            <li>
+                <a href="subscription.html" class="active">Subscription</a>
+            </li>
+        </ul>
+        <div id="profile-container">
+            <b id="NameProfil">
+                Brian
+            </b>
+            <img src="Profile.png" alt="Profile">
+        </div>
+        <script src="nav.js"></script>
+    </nav>
+    <main>
+        <div id="heading">
+            <h1>
+                SUBSCRIPTION
+            </h1>
+        </div>
+        <div id="box">
+            <div id="box-1">
+                <h1>
+                    REGIST YOUR SELF
+                </h1>
+                <h1>
+                    TO BECOME A
+                </h1>
+                <h1>
+                    CONTENT CREATOR 
+                </h1>
+                <h1>
+                    AND VIEWER
+                </h1>
+                <img src="Next Icon.png" alt="Next Icon">
+            </div>
+            <div id="box-2">
+                <form id="form" action="/">
+                    <div class="input-container">
+                        <div class="input-control">
+                            <label for="name">Name</label>
+                            <input type="text" name="username" id="username">
+                            <div class="error"></div>
+                        </div>
+    
+                        <div class="input-control">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-control">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" name="dob" id="dob">
+                            <div class="error"></div>
+                        </div>
+    
+                        <div class="input-control">
+                            <label for="Gender">Gender:</label>
+                            <div id="gender">
+                                <input type="radio" name="Gender" id="male">Male
+                                <input type="radio" name="Gender" id="female">Female
+                            </div>
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-control">
+                            <div id="check">
+                                <input type="checkbox" name="acc" id="acc">
+                                <label for="acc">I Agree to Terms and Condition</label>
+                            </div>
+                            <div class="error"></div>
+                        </div>
+    
+                        <div id="btn">
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="toast">Subscribe Success</div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <b id="footer-name">Asphatl 9: Rejends</b>
+            <h6 id="footer-mid">@ Asphatl 9 : Rejends International 2024</h6>
+            <div class="social-media">
+                <img src="Youtube.png" alt="Icon Youtube">
+                <img src="Instagram.png" alt="Instagram Icon">
+                <img src="X.png" alt="X Icon">
+                <img src="Tiktok.png" alt="Tiktok Icon">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

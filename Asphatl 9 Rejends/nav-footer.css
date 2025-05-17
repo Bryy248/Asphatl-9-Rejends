@@ -1,0 +1,134 @@
+*, 
+html {
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+    font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav div img {
+    width: 50px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 400ms;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+
+nav ul li a:hover {
+    color: #C50645;
+    border-bottom: 3px solid #C50645;
+}
+
+#logo-container, #profile-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#logo-name {
+    color: #1a1a1a;
+}
+
+#NameProfil {
+    color: #C50645;
+}
+
+#icon-menu{
+    width: 28px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+main {
+    padding-top: 5px;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: white;
+}
+
+.social-media img {
+    width: 25px;
+    padding: 0px 1px;
+}
+
+#footer-name {
+    color: #1a1a1a;
+}
+
+#footer-mid {
+    color: #A59B9B;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media  screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        border-bottom: 1px solid #E2E2E2;
+    }
+    #profile-container {
+        display: none;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul li:last-of-type {
+        padding-bottom: 8px;
+    }
+    nav ul.hidden {
+        display: none;
+    }
+    .menu-icon {
+        display: flex;
+        align-items: center;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+    }
+    footer {
+        border-top: 1px solid #E2E2E2;
+    }
+}

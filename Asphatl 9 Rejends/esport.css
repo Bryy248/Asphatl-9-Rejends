@@ -1,0 +1,106 @@
+*,
+body {
+    font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+main {
+    background-image: url(Blur\ Background\ Esport.png);
+    background-repeat: no-repeat;
+}
+
+nav ul li a.active {
+    color: #C50645;
+    border-bottom: 3px solid #C50645;
+}
+
+.heading {
+    padding-top: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.asphatl {
+    color: #C50645;
+}
+
+#esport, #sponsorship {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #C50645;
+}
+
+div article img {
+    width: 100px;
+    object-fit: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.out-content {
+    text-align: center;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #C50645;
+    font-weight: 800;
+}
+
+.grid > article {
+    text-align: center;
+    color: #1A1A1A;
+    box-shadow: 10px 0px 20px 10px ;
+    border-radius: 10px;
+}
+
+.in-content {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #1A1A1A;
+    font-weight: 800;
+}
+
+#sponsor img {
+    width: 200px;
+    padding: 0px 20px;
+}
+
+#sponsor {
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        position: relative;
+    }
+    .heading {
+        font-size: 13px;
+    }
+    #esport, #sponsorship {
+        -webkit-text-stroke-width: 2px;
+    }
+    div article img {
+        width: 50px;
+    }
+    .in-content {
+        font-size: 12px;
+    }
+    .out-content {
+        font-size: 12px;
+    }
+    #sponsor img {
+        width: 100px;
+        padding: 0px 15px;
+    }
+}

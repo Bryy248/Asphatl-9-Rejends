@@ -1,0 +1,81 @@
+*,
+body {
+    font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+nav ul li a.active {
+    color: #C50645;
+    border-bottom: 3px solid #C50645;
+}
+
+main {
+    background: none;
+}
+
+div article img {
+    width: 265px;
+    object-fit: cover;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin: 10px 40px 30px;
+    font-size: 15px;
+    row-gap: 30px;
+    grid-gap: 20px;
+}
+
+.konten {
+    color: white;
+    padding-bottom: 20px;
+}
+
+.grid > article {
+    text-align: center;
+    color: #1A1A1A;
+    box-shadow: 10px 0px 20px 10px ;
+    border-radius: 10px;
+}
+
+.class {
+    background-image: url(Blur\ Background.png);
+}
+
+.bottom {
+    padding: 27px;
+}
+
+.sub-class {
+    margin-left: 40px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.class-name {
+    color: #C50645;
+}
+
+@media  screen and (max-width: 768px) {
+    div article img {
+        width: 100px;
+        object-fit: cover;
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 8px;
+    }
+    #first {
+        padding-top: 100px;
+    }
+    .konten {
+        padding-bottom: 15px;
+    }
+    .sub-class {
+        padding-top: 0px;
+    }
+}
